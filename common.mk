@@ -163,6 +163,10 @@ PRODUCT_PACKAGES += \
     Stock \
     Margarita
 
+# Substratum
+PRODUCT_PACKAGES += SubstratumService
+PRODUCT_SYSTEM_SERVER_APPS += SubstratumService
+
 # Build OTA app on official builds
 ifeq ($(CARDINAL_RELEASE),true)
 PRODUCT_PACKAGES += CardinalOTA
